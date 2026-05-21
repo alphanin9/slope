@@ -52,16 +52,11 @@ jobs:
       - name: Add example config
         run: cp slope.conf.example dist/slope-guest-agent/slope.conf
 
-      - name: Package agent
-        run: |
-          cd dist
-          zip -9 -r slope-guest-agent-windows-amd64.zip slope-guest-agent
-
       - name: Upload agent artifact
         uses: actions/upload-artifact@v4
         with:
           name: slope-guest-agent-windows-amd64
-          path: dist/slope-guest-agent-windows-amd64.zip
+          path: dist/*
           if-no-files-found: error
 
       - name: Publish release asset
