@@ -4,6 +4,8 @@
 
 Minimal CTF-focused sandbox service for Windows samples on a Linux KVM/libvirt host. 100% vibecoded 😎
 
+The name is a portmanteau of "CAPE" (the malware analysis sandbox this has been based on) and "slop" (what this project is)
+
 ## Architecture
 
 - API service: `POST /tasks`, `GET /tasks/{id}`, `GET /tasks/{id}/screenshots`, `GET /tasks/{id}/artifacts/{name}`.
