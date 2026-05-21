@@ -1,0 +1,27 @@
+http:
+  addr: "127.0.0.1:18080"
+
+storage_dir: "storage-smoketest"
+database_path: "storage-smoketest/slope.db"
+
+backend:
+  type: "libvirt"
+  dsn: "qemu:///system"
+
+limits:
+  max_timeout_sec: 120
+  max_sample_size: 104857600
+
+screenshots:
+  interval_sec: 2
+  dedupe: false
+
+scheduler_poll_ms: 500
+guest_poll_ms: 1000
+vm_ready_timeout_ms: 120000
+
+machines:
+  - name: "Win11 Debug target"
+    platform: "windows"
+    snapshot: "slope-smoketest-agent"
+    guest_port: 9000

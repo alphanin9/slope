@@ -1,0 +1,25 @@
+# Build outputs
+/build/
+/slope-sandbox
+/slope-guest-agent.exe
+*.exe
+
+# Runtime storage and local databases
+/storage/
+/storage-*/
+*.db
+*.db-shm
+*.db-wal
+
+# Logs and temporary artifacts
+*.log
+*.tmp
+*.out
+
+# Go test/build cache artifacts
+*.test
+coverage.out
+
+# Editor/OS noise
+.DS_Store
+Thumbs.db

@@ -1,0 +1,9 @@
+{
+  "addr": "0.0.0.0:9000",
+  "root": "C:\\slope",
+  "allowed_roots": [
+    "C:\\slope",
+    "C:\\Windows\\System32"
+  ],
+  "max_bytes": 536870912
+}
