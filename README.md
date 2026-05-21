@@ -1,8 +1,8 @@
 # slope sandbox
 
-Minimal CTF-focused sandbox service for Windows samples on a Linux KVM/libvirt host.
+[![100% Vibe Coded](https://sladge.net/badge.svg)](https://sladge.net)
 
-I chose Go because the service is mostly control-plane code: HTTP, SQLite state, filesystem artifacts, timeouts, and libvirt calls. Go keeps those pieces explicit with a small dependency set and simple test doubles.
+Minimal CTF-focused sandbox service for Windows samples on a Linux KVM/libvirt host. 100% vibecoded 😎
 
 ## Architecture
 
